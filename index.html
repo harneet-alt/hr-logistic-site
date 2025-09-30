@@ -109,13 +109,24 @@
     </form>
   </section>
 
-  <section id="fleet" class="fleet container">
-    <h2>La nostra flotta</h2>
-    <p>Disponiamo di una flotta di furgoni e mezzi moderni e versatili, in grado di soddisfare ogni esigenza di trasporto. Ogni mezzo è dotato delle ultime tecnologie per monitoraggio e sicurezza.</p>
-    <div class="fleet-gallery">
-      <img src="https://images.unsplash.com/photo-1607435092402-08f86790cd3f" alt="Furgone 1" />
-      <img src="https://images.unsplash.com/photo-1588431508734-2f596d071873" alt="Furgone 2" />
-      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Furgone 3" />
+  <section id="fleet" class="vehicle container" aria-labelledby="vehicle-title" itemscope itemtype="https://schema.org/Vehicle">
+    <div class="vehicle__grid">
+      <figure class="vehicle__media">
+        <img src="assets/img/IMG_2934.jpg" alt="Furgone MAN TGE HR Logistic" loading="lazy" width="900" height="600" />
+      </figure>
+      <div class="vehicle__content">
+        <h2 id="vehicle-title" itemprop="name">Il nostro mezzo operativo</h2>
+        <p class="vehicle__description" itemprop="description">Mettiamo a disposizione un MAN TGE, moderno e sempre sottoposto a manutenzione accurata, ideale per garantire trasporti sicuri, puntuali e personalizzati. Grazie alla sua versatilità e capacità di carico, è perfetto per gestire consegne urbane, regionali e nazionali con la massima affidabilità.</p>
+        <ul class="vehicle__specs">
+          <li><strong>Marca e modello:</strong> <span itemprop="model">MAN TGE</span></li>
+          <li><strong>Alimentazione:</strong> Gasolio (Euro 6b – basso impatto ambientale)</li>
+          <li><strong>Portata utile:</strong> <span itemprop="payload">1.420 kg</span></li>
+          <li><strong>Massa complessiva:</strong> 3.500 kg</li>
+          <li><strong>Lunghezza veicolo:</strong> 5,99 m</li>
+          <li><strong>Larghezza veicolo:</strong> 2,04 m</li>
+        </ul>
+        <a href="#quote" class="btn-primary vehicle__cta">Richiedi un preventivo</a>
+      </div>
     </div>
   </section>
 
