@@ -261,19 +261,68 @@ section h2 {
   background: var(--secondary);
 }
 
-/* Fleet */
-.fleet-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+/* Vehicle */
+.vehicle {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.fleet-gallery img {
+.vehicle__grid {
+  display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.vehicle__media {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(1, 22, 39, 0.12);  
+}
+
+.vehicle__media img {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  display: block;
   object-fit: cover;
-  border-radius: 6px;
+  }
+
+.vehicle__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vehicle__content h2 {
+  text-align: left;
+}
+
+.vehicle__description {
+  color: var(--secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.vehicle__specs {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.vehicle__specs li {
+  font-size: 0.98rem;
+  color: var(--dark-text);
+}
+
+.vehicle__specs li strong {
+  font-weight: 700;
+  color: var(--primary);
+  margin-right: 0.35rem;
+}
+
+.vehicle__cta {
+  align-self: flex-start;
 }
 
 /* Contact */
@@ -381,6 +430,26 @@ footer {
   .values, .service-list {
     flex-direction: column;
     align-items: center;
+  }
+  .vehicle__grid {
+    grid-template-columns: 1fr;
+  }
+  .vehicle__media {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .vehicle__content {
+    text-align: center;
+    align-items: center;
+  }
+  .vehicle__content h2 {
+    text-align: center;
+  }
+  .vehicle__specs {
+    text-align: left;
+  }
+  .vehicle__cta {
+    align-self: center;
   }
   .footer-content {
     flex-direction: column;
