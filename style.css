@@ -62,8 +62,10 @@ header .container {
 }
 
 .logo {
-  height: clamp(68px, 10vw, 96px);
-  width: auto;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .nav-links {
@@ -411,6 +413,9 @@ footer {
 @media (max-width: 767px) {
   header .container {
     padding: 0.75rem 0;
+  }
+  .logo {
+    width: 120px;
   }
   .nav-bar {
     flex-direction: column;
