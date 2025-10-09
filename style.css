@@ -62,7 +62,7 @@ header .container {
 }
 
 .logo {
-  height: clamp(52px, 7vw, 68px);
+  height: clamp(68px, 10vw, 96px);
   width: auto;
 }
 
