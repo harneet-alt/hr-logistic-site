@@ -272,11 +272,19 @@ section h2 {
   padding-bottom: 4rem;
 }
 
+.vehicle h2 {
+  margin-bottom: 2.5rem;
+}
+
 .vehicle__grid {
   display: grid;
 grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.5rem;
   align-items: center;
+}
+
+.vehicle__grid + .vehicle__grid {
+  margin-top: 3rem;
 }
 
 .vehicle__media {
@@ -302,6 +310,10 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .vehicle__content h2 {
+  text-align: left;
+}
+
+.vehicle__content h3 {
   text-align: left;
 }
 
